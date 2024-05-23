@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="navbar navbar-expand-md p-3 bg-dark navbar-dark ">
+            <a href="#" class="navbar-brand">WE-Mobile Shop</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navi"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-nav navbar-collapse collapse d-flex justify-content-end " id="navi">
+                <ul class="nav">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Phones</a></li></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Special Offers</a></li></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link">Contact</a></li></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container d-flex align-content-center ">
+            <div class="cards row mt-3 d-flex justify-content-center p-2 m-1">
+                <div class="card col-4 w-25 p-2 d-flex flex-column align-items-center">
+                    <img src="assets/images/iphone.jpeg" class="card-img-top w-100 " alt="iphone">
+                    <h3 class="card-title">APPLE</h3>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <p class="price">LE.15000</p>
+                    </div>
+                    <button onclick="change('APPLE','EL.15000',5)" href="#" class="btn btn-primary apple">Buy Now</button>
+                </div>
+                <div class="card col-4 w-25 d-flex flex-column align-items-center p-2 m-1">
+                    <img src="assets/images/rea.jpg" class="card-img-top w-100 " alt="iphone">
+                    <h3 class="card-title">SAMSUNG</h3>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <p class="price ">LE.10000</p>
+                    </div>
+                    <button href="#" onclick="change('SAMSUNG','EL.10000',3)" class="btn btn-primary d-inline SAMSUNG">Buy Now</button>
+                </div>
+                <div class="card col-4 w-25 d-flex flex-column align-items-center p-2 m-1">
+                    <img src="assets/images/sam.jpg" class="card-img-top w-100 " alt="iphone">
+                    <h3 class="card-title">Realme</h3>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <p class="price">LE.6000</p>
+                    </div>
+                    <button onclick="change('Realme','EL.6000',2)" class="btn btn-primary d-inline realme">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<hr>
+    <section>
+        <form action="#" class="container">
+            <h2>Order Form</h2>
+            <label for="">phone model</label>
+            <input class="form-control model" type="text" >
+            <label for="">Price($)</label>
+            <input class="form-control sale" type="text">
+            <label for="">Quntity</label>
+            <input class="form-control quntity" type="text" >
+
+            <button type="submit" class="btn btn-primary mt-2 ">Submit Order</button>
+        </form>
+    </section>
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

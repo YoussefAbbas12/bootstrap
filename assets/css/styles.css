@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+header {
+    font-weight: bold;
+}
+ 
+#products .card {
+    width: 100%;
+}
+ 
+#cart {
+    display: none;
+}
+ 
+#cartItems .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
